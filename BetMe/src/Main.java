@@ -1,3 +1,4 @@
+import LD.MySQLAccess;
 
 public class Main {
 
@@ -5,9 +6,14 @@ public class Main {
 	{
 		// TODO Auto-generated method stub
 
-		System.out.println("Kaixooo");
-		System.out.println("Zelan?");
-		System.out.println("Ondo eta zu?");
+		    MySQLAccess dao = new MySQLAccess();
+		    try {
+				dao.readDataBase();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		  
 	}
 
 }
