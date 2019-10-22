@@ -7,6 +7,7 @@ public class Main {
 
 		System.out.println("Kaixooo");
 		System.out.println("Zelan?");
+		System.out.println("Ondo eta zu?");
 	}
 
 }
