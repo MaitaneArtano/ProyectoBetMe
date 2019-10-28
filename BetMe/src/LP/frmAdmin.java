@@ -14,6 +14,9 @@ import javax.swing.JOptionPane;
 import javax.swing.GroupLayout.Alignment;
 import org.edisoncor.gui.button.ButtonIcon;
 import org.edisoncor.gui.util.Avatar;
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
 
 public class frmAdmin extends javax.swing.JFrame{
 
@@ -54,7 +57,7 @@ public class frmAdmin extends javax.swing.JFrame{
     
     public void llamarMenu(){
         
-    
+    /*
         if(menu.getSelectedtitulo().equals("Deportes")){
         	frmAdminDeportes frame=new frmAdminDeportes();
         	frame.setVisible(true);
@@ -69,6 +72,7 @@ public class frmAdmin extends javax.swing.JFrame{
         	this.setVisible(false);
         }
       
+      */
       
     }
     
@@ -153,6 +157,33 @@ public class frmAdmin extends javax.swing.JFrame{
         });
         
         menu.add(btnLogOut);
+        
+        JMenuBar menuBar = new JMenuBar();
+        menuBar.setBounds(0, 0, 139, 31);
+        menu.add(menuBar);
+        
+        JMenuItem mntmAlta = new JMenuItem("Alta");
+        menuBar.add(mntmAlta);
+        
+        JMenuItem mntmModificar = new JMenuItem("Modificar");
+        menuBar.add(mntmModificar);
+        
+        JMenuItem mntmEliminar = new JMenuItem("Eliminar");
+        menuBar.add(mntmEliminar);
+        
+        JMenuBar menuBar_1 = new JMenuBar();
+        menuBar_1.setToolTipText("Partidos");
+        menuBar_1.setBounds(141, 0, 139, 31);
+        menu.add(menuBar_1);
+        
+        JMenuItem mntmAlta_1 = new JMenuItem("Alta");
+        menuBar_1.add(mntmAlta_1);
+        
+        JMenuItem mntmModificar_1 = new JMenuItem("Modificar");
+        menuBar_1.add(mntmModificar_1);
+        
+        JMenuItem mntmEliminar_1 = new JMenuItem("Eliminar");
+        menuBar_1.add(mntmEliminar_1);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -206,4 +237,3 @@ private void menuKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_menu
     private org.edisoncor.gui.button.ButtonIpod buttonIpod1;
     private org.edisoncor.gui.panel.PanelAvatarChooser menu;
 }
-

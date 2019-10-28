@@ -2,7 +2,6 @@ package LP;
 
 import java.awt.Color;
 import java.awt.Font;
-import java.net.URL;
 import java.sql.Connection;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;

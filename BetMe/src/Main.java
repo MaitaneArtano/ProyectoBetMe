@@ -1,6 +1,8 @@
 import LD.MySQLAccess;
 import LP.frmAdmin;
-import LP.frmPrincipal;
+import LP.frmAdmin1;
+import LP.frmUsuario;
+
 import javax.swing.UIManager;
 import javax.swing.UIManager.LookAndFeelInfo;
 
@@ -29,7 +31,7 @@ public class Main {
 			    // If Nimbus is not available, you can set the GUI to another look and feel.
 			}	
 		    
-		    frmAdmin objPrincipal=new frmAdmin();
+		    frmUsuario objPrincipal=new frmUsuario();
 			objPrincipal.setVisible(true);
 		  
 	}
